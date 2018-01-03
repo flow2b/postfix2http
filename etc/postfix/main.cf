@@ -1,0 +1,19 @@
+alias_maps = 
+anvil_rate_time_unit = 5s
+default_destination_concurrency_limit = 1
+default_destination_rate_delay = 1s
+default_destination_recipient_limit = 1
+message_size_limit=52428800
+mynetworks =
+relay_domains = myrelaydomain.com
+relay_transport = mailtohttp
+smtp_tls_security_level = may
+smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_use_tls=yes
+queue_minfree=500000000
+smtpd_client_connection_count_limit = 1
+smtpd_client_connection_rate_limit = 10
+smtpd_client_message_rate_limit = 10
+smtpd_client_recipient_rate_limit = 10
+
