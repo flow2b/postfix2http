@@ -279,7 +279,7 @@ if __name__ == "__main__":
         if opt.do_print:
             print(json.dumps(data, encoding = data.get("encoding")))
         else:
-            headers = { "Content-Type": "application/json; charset=%s" % data.get("encoding"), "User-Agent": "NewsmanApp/MailToJson %s - https://github.com/Newsman/MailToJson" % VERSION }
+            headers = { "Content-Type": "application/json; charset=%s" % data.get("encoding"), "User-Agent": "MailToJson"}
             req = urllib2.Request(opt.url, json.dumps(data, encoding = data.get("encoding")), headers)
 	    context = ssl._create_unverified_context()
             resp = urllib2.urlopen(req,timeout=1,context=context)
